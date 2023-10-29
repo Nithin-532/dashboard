@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 .container {
@@ -42,7 +46,7 @@
 .upper-section, .user-profile {
   display: grid;
   align-items: center;
-  padding: 20px;
+  padding: 15px 30px;
 }
 
 .upper-section {
@@ -55,7 +59,9 @@
 
 .profile-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 25px;
 }
 
 .profile-links input {
@@ -178,13 +184,60 @@
 }
 
 #search-bar {
-  width: 300px;
+  width: 500px;
   border: none;
   background-color: rgba(126, 134, 140, 0.313);
   border-radius: 15px;
   height: 25px;
   padding: 10px;
 }
+
+.display-picture {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.display-picture img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-profile img {
+  width: 60px;
+  height: 60px;
+}
+
+.user-profile .display-picture {
+  width: 70px;
+}
+
+.user-profile p {
+  line-height: 25px;
+}
+
+.user {
+  justify-self: end;
+  padding-right: 30px;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.user p {
+  line-height: 20px;
+}
+
+#search-bar:active {
+  border: none;
+}
+
+.profile-links input:hover {
+  cursor: pointer;
+}
+
 
 
 
